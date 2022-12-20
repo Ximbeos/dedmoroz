@@ -84,28 +84,28 @@ animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;
 </style>
 
 <script>
-// устанавливаем дату
+// СѓСЃС‚Р°РЅР°РІР»РёРІР°РµРј РґР°С‚Сѓ
 var countDownDate = new Date("Jan 1, 2023 00:00:00").getTime();
 
-// меняем дату каждую секунду
+// РјРµРЅСЏРµРј РґР°С‚Сѓ РєР°Р¶РґСѓСЋ СЃРµРєСѓРЅРґСѓ
 var x = setInterval(function() {
 
-  // Сегодняшняя дата
+  // РЎРµРіРѕРґРЅСЏС€РЅСЏСЏ РґР°С‚Р°
   var now = new Date().getTime();
 
-  // Вычисляем разницу между датами
+  // Р’С‹С‡РёСЃР»СЏРµРј СЂР°Р·РЅРёС†Сѓ РјРµР¶РґСѓ РґР°С‚Р°РјРё
   var distance = countDownDate - now;
 
-  // Вычисляем дни, часы, минуты и секунды
+  // Р’С‹С‡РёСЃР»СЏРµРј РґРЅРё, С‡Р°СЃС‹, РјРёРЅСѓС‚С‹ Рё СЃРµРєСѓРЅРґС‹
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  // Отображаем результат в элементе id="demo"
+  // РћС‚РѕР±СЂР°Р¶Р°РµРј СЂРµР·СѓР»СЊС‚Р°С‚ РІ СЌР»РµРјРµРЅС‚Рµ id="demo"
   document.getElementById("demo").innerHTML = days + "d " + hours + "h "  + minutes + "m " + seconds + "s ";
 
-  // Если дата достигнута
+  // Р•СЃР»Рё РґР°С‚Р° РґРѕСЃС‚РёРіРЅСѓС‚Р°
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("demo").innerHTML = "HAPPY NEW YEAR";
@@ -150,14 +150,14 @@ var x = setInterval(function() {
 </div>
 
 <div class="navbar">
-  <a href="main.html">Главная</a>
-  <a href="santa.html">История Дедушки</a>
-  <a href="contact.html">Письмо</a>
+  <a href="main.html">Р“Р»Р°РІРЅР°СЏ</a>
+  <a href="history.html">РСЃС‚РѕСЂРёСЏ Р”РµРґСѓС€РєРё</a>
+  <a href="contact.html">РџРёСЃСЊРјРѕ</a>
 
 </div>
 
 <div class="ComingSoon">
-    <h1> НОВЫЙ ГООООООД </h1>
+    <h1> РќРћР’Р«Р™ Р“РћРћРћРћРћРћР” </h1>
     <hr>
     <p id="demo" style="font-size:30px"></p>
    <hr>
