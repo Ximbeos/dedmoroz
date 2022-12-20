@@ -1,0 +1,187 @@
+<html>
+
+<head>
+    <style>
+		#object1 {
+            width: 300px;
+            height: 200px;
+            float: right;
+        }
+        .navbar {
+			color: #008B8B;
+            position: fixed;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 50 px;
+            background: rgba(0, 0, 0, 0.0);;
+            z-index: 5;
+        }
+        
+        .navbar a {
+			color: #008B8B;
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 27px;
+            z-index: 5;
+        }
+        
+        .navbar a:hover {
+            background: #ddd;
+            color: #008B8B;
+        }
+        body 
+		{
+		color: #008B8B;
+          background-color: #eee8d0;
+  background-image: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 50%,
+      #f0ecdb 50%,
+      rgba(240, 236, 219, 0.1)
+
+    ),
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.1),
+      rgba(215, 215, 230, 0.6) 50%,
+      rgba(255, 255, 255, 0.8) 50%,
+      rgba(255, 255, 255, 0.1)
+    );
+        }
+        
+        body p 
+		{
+			color: #008B8B;
+			text-align: left;
+            font-size: 25;
+        }
+        
+        body h1 
+		{
+            color: #008B8B;
+            text-align: left;
+            font-size: 27px;
+        }
+		
+		.snowflake {
+  color: #008B8B;
+  font-size: 1em;
+  font-family: 'Molle', cursive;
+  text-shadow: 0 0 1px #000;
+}
+
+@-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}
+@-webkit-keyframes snowflakes-shake{0%{-webkit-transform:translateX(0px);
+transform:translateX(0px)}50%{-webkit-transform:translateX(80px);
+transform:translateX(80px)}100%{-webkit-transform:translateX(0px);
+transform:translateX(0px)}}
+@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}
+@keyframes snowflakes-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}.snowflake{position:fixed;top:-10%;z-index:9999;
+-webkit-user-select:none;-moz-user-select:none;
+-ms-user-select:none;user-select:none;cursor:default;
+-webkit-animation-name:snowflakes-fall,snowflakes-shake;
+-webkit-animation-duration:10s,3s;
+-webkit-animation-timing-function:linear,ease-in-out;
+-webkit-animation-iteration-count:infinite,infinite;
+-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;
+animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;
+animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;
+-webkit-animation-delay:0s,0s;
+animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;
+-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;
+-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;
+-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;
+-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;
+-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;
+-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;
+-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;
+-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;
+-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="Main.html">Главная</a>
+        <a href="history.html">История Дедушки</a>
+        <a href="contact.html">Письмо</a>
+    </div>
+
+    <form action="mailto:faktoria@gmail.com" method="post" enctype="text/plain">
+        <br>
+        <br>
+        <h1> Дедушка Мороз!</h1>
+        <p>
+            Меня зовут:
+            <input type="text" required size="20" name="First_name">
+            <br><br> Моя фамилия:
+            <input type="text" required size="20" name="Last_Name">
+            <br><br> Я:
+            <select type="text" value="" name="Gender">
+    <option>Мальчик</option>
+   <option>Девочка</option>
+    </select>
+            <br><br>
+            <br> В этом году я вел(а) себя:
+            <input type="radio" required name="Behavior" value="Послушно">Послушно
+            <input type="radio" required name="Behavior" value="Неплохо">Неплохо
+            <input type="radio" required name="Behavior" value="badly, but I promise to improve">Непослушно, но обещаю, что исправлюсь.
+            <br><br>
+            <br>В новый год я хочу:
+            <br>1)&nbsp;
+            <input type="text" required size="60" name="First_wish">
+            <br>2)&nbsp;
+            <input type="text" required size="60" name="Second_wish">
+            <br>3)&nbsp;
+            <input type="text" required size="60" name="Third_wish">
+            <br>а ещё&nbsp;
+            <input type="text" required size="80" name="Fourth_wish">
+            <br><br><br>А ещё, дедушка, я хочу рассказать тебе:<br>
+            <textarea name="P.S." cols="40" rows="4"></textarea>
+            <br><br>
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+	<div class="snowflakes" aria-hidden="true">
+  <div class="snowflake">
+  *
+  </div>
+  <div class="snowflake">
+  *
+  </div>
+  <div class="snowflake">
+  *
+  </div>
+  <div class="snowflake">
+  *
+  </div>
+  <div class="snowflake">
+  *
+  </div>
+  <div class="snowflake">
+  *
+  </div>
+  <div class="snowflake">
+  *
+  </div>
+  <div class="snowflake">
+  *
+  </div>
+  <div class="snowflake">
+  *
+  </div>
+  <div class="snowflake">
+  *
+  </div>
+</div>
+<img id="object1" src="images/Santa2.gif" alt="SantaPicture" widht=80% height=auto/>
+</body>
+
+</html>

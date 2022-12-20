@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+
+  background-color: #2c3e50;
+  background-image: repeating-radial-gradient(
+    circle,
+    #34495e, #34495e 45%,
+    transparent 45%, transparent 60%,
+    #34495e 60%, #34495e 100%
+  );
+  background-size: 10px 10px;
+}
+
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height:50 px;
+  background: rgba(0, 0, 0, 0.0); /* Black background with 0.5 opacity */
+  z-index:7;
+}
+
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 27px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 5px;
+  margin-left: 5%;
+  margin-top: 10%;
+
+}
+
+
+
+article, aside
+
+{
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+   
+}
+
+
+article
+
+{
+background-color: rgba(255, 255, 255, 0.7);
+
+    box-shadow: 0 0 10px rgba(25,25,112,0.5); /* Параметры тени */
+    padding: 10px;
+    border-radius: 5px;
+    width: 80%;
+    margin-right: 5%;
+    z-index:-2;
+}
+
+
+
+aside {
+    position: relative;
+    width: 40%;
+    padding-left: 1.5rem;
+    margin-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: 1.5rem;
+    float: right;
+//    box-shadow: inset 5px 0 5px -5px #29627e;
+    font-style: italic;
+    color: #29627e;
+  //  width: 235px;
+      width: 25%;
+    background-color: #B0E0E6;
+
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+
+//    padding: 10px;
+
+    color: white;
+    font-size: 0.9em;
+    z-index:1; 
+}
+
+aside > p {
+    margin: 1.5rem;
+}
+
+p {
+    font-family: 'Fira Sans', sans-serif;
+    text-align: justify;
+    line-height: 1.9em;
+    color: MidnightBlue;
+    margin-right: 5%;
+    margin-left: 5%
+}
+
+
+#santa_picture
+
+{
+
+    text-align: center;
+
+}
+
+
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+width:100%
+}
+
+aside img
+
+{
+
+    margin: 15px 15px;
+
+}
+
+.snowflake {
+  color: #fff;
+  font-size: 1em;
+  font-family: 'Molle', cursive;
+  text-shadow: 0 0 1px #000;
+}
+
+@-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}
+@-webkit-keyframes snowflakes-shake{0%{-webkit-transform:translateX(0px);
+transform:translateX(0px)}50%{-webkit-transform:translateX(80px);
+transform:translateX(80px)}100%{-webkit-transform:translateX(0px);
+transform:translateX(0px)}}
+@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}
+@keyframes snowflakes-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}.snowflake{position:fixed;top:-10%;z-index:9999;
+-webkit-user-select:none;-moz-user-select:none;
+-ms-user-select:none;user-select:none;cursor:default;
+-webkit-animation-name:snowflakes-fall,snowflakes-shake;
+-webkit-animation-duration:10s,3s;
+-webkit-animation-timing-function:linear,ease-in-out;
+-webkit-animation-iteration-count:infinite,infinite;
+-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;
+animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;
+animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;
+-webkit-animation-delay:0s,0s;
+animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;
+-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;
+-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;
+-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;
+-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;
+-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;
+-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;
+-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;
+-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;
+-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}
+
+</style>
+
+
+</head>
+
+
+<body>
+
+<header>
+<div class="navbar">
+  <a href="main.html">Главная</a>
+  <a href="history.html">История Дедушки</a>
+  <a href="contact.html">Письмо</a>
+
+</div>
+
+
+</header>
+
+<div class="main">
+
+   
+  <section>
+            
+                    
+   <article>		
+                    
+               
+                <aside>
+                    <h1>Дедушка мороз</h1>
+                   
+                      
+                      <img src="images/Santa3.gif" alt="SantaPicture" widht=80% height=auto />
+
+                      
+                    <p>Улицей гуляет Дедушка Мороз,<br>
+						  Иней рассыпает по ветьвям берёз<br>
+                          Ходит, бородою белую трясёт,<br>
+                          Топает ногою, только треск идет.<br>
+                          Иль на окназ дышит закоптелых хат<br>
+                          Да узоры пишет, гляда на ребят.
+
+                    </p>
+                                         
+                </aside>
+
+
+<p>
+		
+
+Первый раз Дед Мороз стал тем, кем он является для нас сегодня (добрый волшебник-даритель), в 10-е годы XX века. По нашему мнению, главную роль в этом сыграла поздравительная открытка.
+
+В Америке и Европе в XIX века сформировалась устойчивая традиция отмечать Рождество с участием Санта Клауса или местного волшебника, которые являются на праздник с подарками. До эпохи глобализации было еще очень далеко, поэтому в разных странах он имел свои национальные особенности. Под влиянием этого западного «Рождественского Деда» на русской почве появился свой Дед Мороз. Как это произошло?
+
+На рубеже XIX-XX веков образованная часть русского общества знакомится с поздравительными открытками, среди которых заметное место занимали рождественские.  Они быстро становятся необыкновенно популярными.
+
+В книге Марии Чапкиной «Русская рождественская и новогодняя открытка» приводится такой факт: «В Рождество 1909 года и Новый 1910 год петербуржцы обменялись 10 миллионами поздравлений». Культура поздравления с помощью открытки проникает во все слои образованного общества.
+
+Первый раз Дед Мороз стал тем, кем он является для нас сегодня (добрый волшебник-даритель), в 10-е годы XX века. По нашему мнению, главную роль в этом сыграла поздравительная открытка.
+
+В Америке и Европе в XIX века сформировалась устойчивая традиция отмечать Рождество с участием Санта Клауса или местного волшебника, которые являются на праздник с подарками. До эпохи глобализации было еще очень далеко, поэтому в разных странах он имел свои национальные особенности. Под влиянием этого западного «Рождественского Деда» на русской почве появился свой Дед Мороз. Как это произошло?
+
+На рубеже XIX-XX веков образованная часть русского общества знакомится с поздравительными открытками, среди которых заметное место занимали рождественские.  Они быстро становятся необыкновенно популярными.
+
+В книге Марии Чапкиной «Русская рождественская и новогодняя открытка» приводится такой факт: «В Рождество 1909 года и Новый 1910 год петербуржцы обменялись 10 миллионами поздравлений». Культура поздравления с помощью открытки проникает во все слои образованного общества.
+
+Таким образом, на формирование образа Деда Мороза оказали влияние три фактора: во-первых, западный волшебник-даритель, во-вторых, герои русских сказок, в-третьих, широкое распространение рождественской открытки.
+ </article>
+</section>
+</div>
+
+
+            <footer>
+
+            <img src="images/footer2.png" alt=""  width=100%/>
+
+
+
+            </footer>
+        </div>
+
+
+<div class="snowflakes" aria-hidden="true">
+  <div class="snowflake">
+  *
+  </div>
+  <div class="snowflake">
+  *
+  </div>
+  <div class="snowflake">
+  *
+  </div>
+  <div class="snowflake">
+  *
+  </div>
+  <div class="snowflake">
+  *
+  </div>
+  <div class="snowflake">
+  *
+  </div>
+  <div class="snowflake">
+  *
+  </div>
+  <div class="snowflake">
+  *
+  </div>
+  <div class="snowflake">
+  *
+  </div>
+  <div class="snowflake">
+  *
+  </div>
+</div>
+</body>
+</html>
